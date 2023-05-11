@@ -24,7 +24,6 @@ p{
     line-height: 19.36px;
     text-align: center;
     cursor: pointer;
-    width: 336px;
     padding: 24px;
     gap: 8px;
     border: 1px solid #0A3871;
@@ -39,7 +38,6 @@ p{
     line-height: 19.36px;
     text-align: center;
     cursor: pointer;
-    width: 336px;
     padding: 24px;
     gap: 8px;
     border: 1px solid #0A3871;
@@ -108,18 +106,19 @@ p{
 }
 
 .contenido-final button{
+    width: 336px;
     position: absolute;
     bottom: 40px;
 }
 
 .textbox{
     background-color: transparent;
-    width: 700px;
+    width: 680px;
     height: 288px;
     border: none;
     position: absolute;
     top: 168px;
-    left: 240px;
+    left: 230px;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 32px;
@@ -143,7 +142,7 @@ p{
 .aviso-btn{
     position: absolute;
     bottom: 72px;
-    left: 240px;
+    left: 230px;
 }
 .aviso i{
     color: #495057;
@@ -160,5 +159,10 @@ p{
 }
 
 #encriptar{
+    width: 328px;
     margin-right: 24px;
+}
+
+#desencriptar{
+    width: 328px;
 }
