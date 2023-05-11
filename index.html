@@ -5,9 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <img id="Logo"src="./img/Logo.png" alt="">
+    <textarea name="" class="textbox" placeholder="Ingresa el texto aqui"></textarea>
+    <div class="rectangulo-contenedor2">
+        <div class="contenido-inicial">
+            <img id="img-contenedor2"src="./img/Muñeco.png" alt="">
+            <h3>Ningún mensaje fue encontrado</h3>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <div class="contenido-final">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut purus turpis, 
+                sodales et tristique nec, iaculis at justo. Morbi eleifend consectetur 
+                odio nec rhoncus. Curabitur non purus vel massa elementum finibus in ac mi. 
+                Sed magna leo, varius interdum vehicula luctus, malesuada et est. Phasellus 
+                mattis suscipit turpis sit amet eleifend. </p>
+            <button class="btn-conBorde">COPIAR</button>
+        </div>
+    </div>
+    <div class="aviso-btn">
+        <div class="aviso">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+        <button id="encriptar" class="btn-conFondo">ENCRIPTAR</button>
+        <button id="desencriptar" class="btn-conBorde">DESENCRIPTAR</button>
+    </div>
 </body>
 
 <!--Iniciar Archivos con JS-->
