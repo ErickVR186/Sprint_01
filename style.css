@@ -69,7 +69,7 @@ p{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  
     
 }
 
@@ -103,6 +103,11 @@ p{
     font-size: 24px;
     text-align: justify;
     line-height: 36px;
+}
+
+.contenido-final .texto-mostrado{
+    max-height: 60vh;
+    overflow-y: auto;
 }
 
 .contenido-final button{
@@ -165,4 +170,53 @@ p{
 
 #desencriptar{
     width: 328px;
+}
+
+@media only screen and (max-width:768px){
+    #Logo{
+        padding-top: 73.42px;
+        padding-left: 40px;
+    }
+    .textbox{
+        width: calc(100% - 80px);
+        top: 240px;
+        left: 0;
+        margin: 0 40px;
+    }
+    .aviso-btn{
+        top: 700px;
+        bottom: 0;
+        left: 0;
+        margin: 0 40px;
+        height: 115px;
+    }
+    .contenido-inicial{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .contenido-inicial h3,p {
+        white-space: nowrap;
+    }
+    .contenido-inicial #img-contenedor2{
+        display: none;
+    }
+    .rectangulo-contenedor2{
+        width: calc(100% - 80px);
+        height: 25vh;
+        top: initial;
+        bottom: 0;
+    }
+    .contenido-final p {
+        white-space: initial;
+    }
+    .contenido-final .texto-mostrado {
+        max-height: 12vh;
+        overflow-y: auto;
+        margin-bottom: 15px;
+    }
+    .contenido-final button {
+        width: 100%;
+        position: initial;
+    }
 }
