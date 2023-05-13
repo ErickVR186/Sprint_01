@@ -249,7 +249,7 @@ p{
     .aviso-btn {
         text-align: center;
         top: initial;
-        bottom: 36%;
+        bottom: 38%;
         margin: 0 16px;
     }
     .aviso {
@@ -261,6 +261,7 @@ p{
     .rectangulo-contenedor2 {
         width: calc(100% - 32px);
         margin: 40px 16px;
+        height: 27%;
     }
 
     .btn-conFondo {
@@ -274,9 +275,7 @@ p{
         margin-right: 0;
         margin-bottom: 16px;
     }
-    .rectangulo-contenedor2 {
-        height: 24vh;
-    }
+
     .contenido-inicial {
         width: inherit;
     }
