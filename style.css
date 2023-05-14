@@ -131,7 +131,7 @@ p{
     line-height: 48px;
     color: #0A3871;
     resize: none;
-    text-align: justify;
+    /*text-align: justify;*/
 }
 
 .textbox:focus {

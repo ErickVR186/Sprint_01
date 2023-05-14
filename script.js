@@ -15,15 +15,17 @@ encriptar.addEventListener('click', function(e){
     e.preventDefault();
     var textarea = document.getElementById("textbox");
     var datosTextarea = textarea.value;
-    let textoSinEspacios = datosTextarea.replace(/\s+/g, '')
+    
+    
     //Mostrar y ocultar texto en div lateral
     var contenidoInicial = document.getElementById("contenidoInicial");
     contenidoInicial.style.display = "none";
     var contenidoFinal = document.getElementById("contenidoFinal");
     contenidoFinal.style.display = "block";
+
     //Verificacion y codificación del mensaje
-    let letras = textoSinEspacios.split('');
-    for(var i=0; i < textoSinEspacios.length; i++){
+    let letras = datosTextarea.split('');
+    for(var i=0; i < datosTextarea.length; i++){
         if(letras[i]=='a'){
             letras[i]='ai';
         }else if(letras[i]=='e'){
@@ -38,14 +40,12 @@ encriptar.addEventListener('click', function(e){
         else if(letras[i]=='u'){
             letras[i]='ufat';
         }
-        else if(letras[i]==' '){
-            letras[i]='ufat';
-        }
         
     }
     let union = letras.join('');
     var textoConte = document.getElementById("texto-contenido");
     textoConte.innerHTML=union;
+    textarea.value = "";
 });
 
 //Acción del boton desencriptar
@@ -54,15 +54,15 @@ desencriptar.addEventListener('click', function(e){
     e.preventDefault();
     var textarea = document.getElementById("textbox");
     var datosTextarea = textarea.value;
-    let textoSinEspacios = datosTextarea.replace(/\s+/g, '')
+    
     //Mostrar y ocultar texto en div lateral
     var contenidoInicial = document.getElementById("contenidoInicial");
     contenidoInicial.style.display = "none";
     var contenidoFinal = document.getElementById("contenidoFinal");
     contenidoFinal.style.display = "block";
 
-    let letras = textoSinEspacios.split('');
-    for(var i=0; i < textoSinEspacios.length; i++){
+    let letras = datosTextarea.split('');
+    for(var i=0; i < datosTextarea.length; i++){
         if(letras[i]=='a'){
             letras[i+1]='';
         }else if(letras[i]=='e'){
@@ -90,6 +90,7 @@ desencriptar.addEventListener('click', function(e){
     let union = letras.join('');
     var textoConte = document.getElementById("texto-contenido");
     textoConte.innerHTML=union;
+    textarea.value = "";
 });
 
 //Acción del boton copiar
